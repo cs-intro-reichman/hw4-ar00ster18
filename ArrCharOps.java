@@ -170,6 +170,9 @@ public class ArrCharOps {
     public static int compareTo(String str1, String str2) {
         int uniValue1 = 0;
         int uniValue2 = 0;
+        if (str1.isEmpty() || str2.isEmpty()){
+            return -2;
+        }
         for (int i = 0; i < str1.length(); i++){
             uniValue1 += str1.charAt(i);
         }
